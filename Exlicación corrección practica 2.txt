@@ -1,0 +1,30 @@
+Ejercicio 1
+
+He optado por crear un vector, llamado "edades", conformado por distintas edades (14,16,17,32,43,50), resolviendo el ejercicio creando a partir del comando "mean", lo especificado en el ejercicio, es decir, la media de todas esas edades.
+
+Ejercicio 2
+
+Aquí he procedido a usar el comando set.seed (123 en mi caso), que permite crear una semilla. Una vez se coloca el numero de registros gracias a n_registros <- (en mi caso 8), se procede a crear la cantidad_artefactos, hecho a través del comando completo "cantidad_artefactos <- sample(1:142, n_registros, replace = TRUE)". El 1:142 es la cantidad de elementos, que en mi caso fue puesto hasta 142 como máximo.
+
+Ejercicio 3
+
+Al igual que en el ejercicio 1, aquí he creado un nuevo vector, llamado ahora como "vector" a secas, conformado por 2,4,5,10 y tras ello, se ha procedidio que usar el comando max(), con el que se consigue coger el máximo del vector.
+
+Ejercicio 4
+
+Se ha hecho lo mismo que en el ejercicio 2 salvo por, en este caso, no usar cantidades con numeros, sino elementos arqueológicos, tal que así: materiales_encontrados <- sample(c("collar","espada","restos_oseos"), n_registros, replace = TRUE). 
+
+Ejercicio 5
+
+En este caso, se ha vuelto a crear un vector de primeras, llamado ahora como "años_excavaciones", con un numero de años diversos creados por mi. Tras ello, se ha colocado el comando length (unique(años_excavaciones)). "Length ()" es un comando que devuelve el tamaño de un objeto (número de elementos)y dentro de él, el comando "unique ()", para determinar cuántos valores únicos hay en este vector. Todo ello permite al final los años en los que se ha llevado a cabo las excavaciones. 
+
+Ejercicio 6,7,8,9,10
+
+Estos 5 ejercicios acaban haciendo basicamente lo mismo. 
+Lo primero que se debe hacer es crear el comando "matrix (c(), nrow = x/ncol = x, byrow=TRUE)". ncow es para las filas y ncol es para las columnas (como el unico ejercicio que pide columnas es el 7 solo se ha colocado el ncol en el ejercicio 7). Tras ello se usa el comando "which.min ()" (determina ubicación, es decir, el índice del (primer) mínimo o máximo de un vector numérico (o lógico)) en el caso del ejercicio 6,7 y 9 y "which.max ()" o "max" (es lo mismo) en el ejercicio 8 y 10, permitiendo así conocer los máximos de cada uno de las matrices.
+
+Ejercicio 11,12,13,14
+
+En esto 4 ejercicios se hace lo mismo salvo que cambian los nombres de los vectores y dichos datos, pero ya está.
+Lo primero es crear los distintos vectores, en los 4 casos son 4 vectores en total. Una vez se crean con su diversos datos, se procede a crear el comando del data.frame, colocando cada nombre de vector igualado con el mismo nombre, asi hasta tener los 4 vectores igualados con sus mismos nombres dentro del parentesis del data.frame. Al terminar, se coloca el comando "names()", que permite asignar nombres a todos los elementos de un vector, y se creará una tabla entera con todos los datos que se han colocado, consiguiendo así un método de creación fácil.
+
